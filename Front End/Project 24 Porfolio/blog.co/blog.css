@@ -1,0 +1,28 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+.nav-header a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: grey;
+}
+
+.nav-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 2rem;
+      color: white;
+      background-color: midnightblue;
+}
+
+.article-div {
+      display: flex;
+      flex-direction: column;
+
+}
+

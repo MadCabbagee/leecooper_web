@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-image: url('./images/DS2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(79, 168, 168);
+}
+
+.card {
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    top: 10vh;
+}
+
+.cardTop {
+    background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.profileImage {
+    width: 96px;
+    border-radius: 100%;
+    border: 10px solid white;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -50px;
+    position: relative;
+}
+
+.userInfo {
+    text-align: center;
+    width: 70%;
+}
+
+.name-age {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.userInfo > p {
+    color: grey;
+}
+
+.statsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: 1px solid grey;
+    width: 100%;
+}
+
+.stats {
+    padding: 0;
+    margin: 0;
+}
+
+.stats > h1 {
+    font-size: 20px;
+}
+
+.stats > p {
+    font-size: 15px;
+    color: grey;
+}

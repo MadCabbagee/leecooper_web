@@ -1,0 +1,33 @@
+body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      /*table image (blackjack)*/
+      background-image: url(../blackjack/img/table\(bj\).avif);
+      background-size: cover;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+
+}
+
+h1 {
+      color: goldenrod;
+}
+
+#message-el {
+      font-style: italic;
+}
+
+/*make sure that the buttons are on top of eachothe*/
+button {
+      color: #016f32;
+      width: 150px;
+      background-color: goldenrod;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-weight: bold;
+      border: none;
+      border-radius: 2px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+}
+

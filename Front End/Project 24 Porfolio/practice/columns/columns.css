@@ -1,0 +1,43 @@
+/*Css Columns Practice*/
+
+body {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      background-color: radial-gradient(whitesmoke);
+}
+
+.columns {
+      columns: 4 250px;
+      column-rule: 3px solid black;
+      column-gap: 3rem;
+}
+
+.columns p {
+      margin-top: 0;
+}
+
+.columns h2 {
+      margin-top: 0;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      break-inside: avoid;
+      break-before: column;
+}
+
+
+/* || GENERAL STYLES */
+/* 481 - 768px for ipads and tablets*/
+/* 769 - 1024px for small screen, laptops*/
+/* 1025 - 1200px for deskops, large screens*/
+/* 1201 and greater for extra large screens, tvs*/
+
+@media screen and  (min-width: 481px){
+   columns {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+
+

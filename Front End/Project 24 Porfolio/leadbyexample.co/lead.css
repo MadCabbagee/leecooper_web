@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  background-color: lavender;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  padding-top: 1rem;
+  color: black;
+  font-size: 19px;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  color: black;
+  font-size: 15px;
+} 
+
+header.top-header {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  color: white;
+  background-color: midnightblue;
+
+}
+.title {
+  margin: 0.125rem;
+  padding: 1rem;
+  font-size: 25px;
+  color: white;
+}
+
+.nav-list  {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  color: white;
+}
+
+.nav-list a {
+  font-size: 15px;
+  padding: 0 1.25rem;
+  color: white;
+}
+
+
+.material-symbols-outlined {
+  color: white;
+}
+
+.services-bar li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1rem;
+  color: black;
+
+
+}
+.current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  
+}
+
+.online-resources {
+  display: flex;
+  flex-direction: column;   
+  background-color: aliceblue;
+  height: 80vh;
+  padding-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+  padding: 1rem;
+  background-color: lavender;
+  
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  background-color: skyblue;
+}
+
+.phone-space {
+  margin: 1rem;
+  padding: 1rem;
+  gap: 30px;
+  color: black;
+}
+
+.phone:hover {
+  color: white;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/*
+.logo-linkedin { 
+  min-width: 20px;
+  min-height: 20px;
+  color: white;
+}
+
+.footer  {
+  min-height: 5vh;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}
+*/
+/*use conversion of pixels for rems for entire css this makes is look more professional and easier to read*/
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link />
+    <title>form + css animations</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+      }
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: grey;
+        padding-top: 1rem;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: grid;
+        place-content: center;
+      }
+      div:first-child {
+        background-color: dodgerblue;
+        /*transform: translateX(-50%);*/
+        /*transform: rotateX(180deg);*/
+        transform: skew(-10deg);
+      }
+      div:nth-child(2) {
+        background-color: yellow;
+        /*transform: translateY(-2rem);*/
+        /*transform: rotate(78deg);*/
+        transform: skew(10deg);
+      }
+      div:last-child {
+        background-color: purple;
+        /*transform: translate(100%, -5rem);*/
+        /*transform: rotate(78deg);*/
+        transform: skew(-10deg, -10deg);
+      }
+      animate {
+        animation-name: slide;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+
+        animation: 5s ease-in-out 1s 2 normal forwards slide;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="square">transform</div>
+      <div class="square">transform</div>
+      <div class="square animate">transform</div>
+    </main>
+
+    <!--form for referance-->
+    <form action="index.php" method="POST">
+      <label for="username">username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="name-here"
+        minlength="6"
+        maxlength="15"
+        required
+      /><br />
+
+      <label for="password">password:</label>
+      <input type="password" id="password" /><br />
+
+      <label for="email">email:</label>
+      <input type="email" id="email" placeholder="spongebobsquarepants" /><br />
+
+      <label for="phone">phone #:</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0,9]{4}"
+      /><br />
+
+      <label for="bday">birthdate:</label>
+      <input type="date" id="bday" /><br />
+
+      <label for="quantity">quantity:</label>
+      <input type="number" id="quantity" min="0" max="99" value="1" /><br />
+
+      <label for="Mr.">Mr.:</label>
+      <input type="radio" id="Mr." value="Mr." name="title" />
+      <label for="Ms.">Ms.:</label>
+      <input type="radio" id="Ms." value="Ms." name="title" />
+      <label for="PhD">PhD.:</label>
+      <input type="radio" id="PhD." value="PhD." name="title" /><br />
+
+      <label for="payment">payment</label>
+      <select id="payment">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="giftcard">giftcard</option></select
+      ><br />
+
+      <label for="subscribe">subscribe:</label>
+      <input type="checkbox" id="subscribe" /><br />
+
+      <label for="comment">comment:</label><br />
+      <textarea id="comment" rows="3" cols="25"></textarea><br />
+
+      <label for="comfilement">file:</label>
+      <input type="file" id="file" /><br />
+
+      <input type="reset" /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
