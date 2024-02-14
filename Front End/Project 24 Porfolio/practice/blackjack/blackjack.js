@@ -32,16 +32,16 @@ function getRandomCard() {
 
 function startGame() {
   isAlive = true;
-  renderGame();
-  let firstCard = getRandomCard();
-  let secondCard = getRandomCard();
-  card = [firstCard, secondCard];
+  //let firstCard = getRandomCard();
+  //let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
   sum = firstCard + secondCard;
+  renderGame();
 }
 
 function renderGame() {
   //renders out the first and second card
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+  //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
 
   for (let i = 0; i < cards.length; i++) {
     cardsEl.textContent += cards[i] + " ";
